@@ -42,7 +42,7 @@ set softtabstop=4               " Tab stop at 4 spaces
 :autocmd InsertLeave * set nocul
 
 set t_Co=256
-colorscheme oceandeep
-"colorscheme distinguished
+"colorscheme oceandeep
+colorscheme distinguished
 
 autocmd BufWritePre * :%s/\s\+$//e
