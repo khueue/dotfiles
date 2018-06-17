@@ -13,3 +13,10 @@ tree
 
 $ brew cask list
 minikube
+
+## Manual Installs
+
+Running Minikube (local kubernetes):
+- Install hyperkit (https://github.com/kubernetes/minikube/blob/master/docs/drivers.md#hyperkit-driver)
+- brew cask install minikube
+- minikube start --vm-driver=hyperkit
