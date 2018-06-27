@@ -8,7 +8,7 @@
     "editor.fontSize": 17,
     "editor.insertSpaces": false,
     "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "boundary",
     "editor.rulers": [
         80
     ],
@@ -20,7 +20,7 @@
     "files.autoSave": "onFocusChange",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": false,
+    "files.trimTrailingWhitespace": true,
     "python.linting.enabled": false,
     "python.linting.pylintEnabled": false,
     "python.pythonPath": "/usr/local/bin/python3",
@@ -32,11 +32,11 @@
     "window.newWindowDimensions": "inherit",
     "window.openFilesInNewWindow": "on",
     "window.openFoldersInNewWindow": "on",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "Firewatch Theme",
     "workbench.editor.showTabs": true,
-    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "workbench.iconTheme": "vs-seti",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false
 }
