@@ -25,7 +25,7 @@
     "python.linting.pylintEnabled": false,
     "python.pythonPath": "/usr/local/bin/python3",
     "search.location": "panel",
-    "search.smartCase": true,
+    "search.smartCase": false,
     "telemetry.enableTelemetry": false,
     "terraform.codelens.enabled": false,
     "window.closeWhenEmpty": false,
