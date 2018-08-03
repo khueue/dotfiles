@@ -1,5 +1,13 @@
 # dotfiles
 
+## Add Files
+
+Add files to the repo like this, or so:
+
+```
+ln ~/.config/fish/config.fish .config/fish/config.fish
+```
+
 ## Brew
 
 $ brew leaves
