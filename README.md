@@ -35,3 +35,4 @@ Slack
 Spotify
 TotalSpaces2
 Visual Studio Code
+MenuMeters
