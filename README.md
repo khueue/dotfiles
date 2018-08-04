@@ -3,8 +3,8 @@
 ## Bootstrapping a New Machine
 
 1. Clone the repo.
-2. Run `make copy-gits-to-local` to get everything on your local machine.
-3. Run `make link-locals-to-git` to link everything back into git again.
+2. Run `./copy-gits-to-local` to get everything on your local machine.
+3. Run `./link-locals-to-git` to link everything back into git again.
 
 ## Useful Installs
 
