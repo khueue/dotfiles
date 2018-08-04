@@ -34,10 +34,19 @@
     "window.openFoldersInNewWindow": "on",
     "window.zoomLevel": -1,
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Firewatch Theme",
     "workbench.editor.showTabs": true,
     "workbench.iconTheme": "eq-material-theme-icons",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false,
-    "materialTheme.fixIconsRunning": false
+    "materialTheme.fixIconsRunning": false,
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<tab>"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+    ]
 }

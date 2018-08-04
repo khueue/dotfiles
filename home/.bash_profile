@@ -19,7 +19,7 @@ export EDITOR="vim"
 BOLD="\[$(tput bold)\]"
 COLOR="\[$(tput setaf 3)\]"
 RESET="\[$(tput sgr0)\]"
-export PS1="$BOLD$COLOR[ seraph: \w ]\n\$ $RESET"
+export PS1="$BOLD$COLOR[ BASH: \w ]\n\$ $RESET"
 
 if [ -f "$HOME/.bashrc" ]; then
     source "$HOME/.bashrc"
