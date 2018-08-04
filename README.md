@@ -44,6 +44,17 @@ Visual Studio Code
 MenuMeters
 ```
 
+#### VSCode
+
+Listing extensions could look like this:
+
+```
+$ ls -al ~/.vscode/extensions/
+drwxr-xr-x  12 khu  staff  384 Aug  4 19:06 editorconfig.editorconfig-0.12.4
+drwxr-xr-x  14 khu  staff  448 Aug  4 19:07 ulthes.theme-firewatch-1.0.3
+drwxr-xr-x  20 khu  staff  640 Aug  4 11:24 vscodevim.vim-0.15.7
+```
+
 ## Configuration
 
 ### Key Repeat

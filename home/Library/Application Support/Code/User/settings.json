@@ -35,10 +35,8 @@
     "window.zoomLevel": -1,
     "workbench.activityBar.visible": false,
     "workbench.editor.showTabs": true,
-    "workbench.iconTheme": "eq-material-theme-icons",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false,
-    "materialTheme.fixIconsRunning": false,
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": [
@@ -48,5 +46,6 @@
                 "editor.action.indentLines"
             ]
         },
-    ]
+    ],
+    "workbench.colorTheme": "Firewatch Theme"
 }
