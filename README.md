@@ -60,6 +60,9 @@ drwxr-xr-x  20 khu  staff  640 Aug  4 11:24 vscodevim.vim-0.15.7
 ### Key Repeat
 
 ```
+# Allow key repeat.
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # Normal minimum is 15 (225 ms).
 defaults write -g InitialKeyRepeat -int 13
 
