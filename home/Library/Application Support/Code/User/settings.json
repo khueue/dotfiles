@@ -47,5 +47,8 @@
             ]
         },
     ],
-    "workbench.colorTheme": "Firewatch Theme"
+    "workbench.colorTheme": "Firewatch Theme",
+    "extensions.ignoreRecommendations": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "scm.diffDecorationsGutterWidth": 4
 }
