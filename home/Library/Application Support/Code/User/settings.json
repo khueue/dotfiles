@@ -23,14 +23,10 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "python.linting.enabled": false,
-    "python.linting.pylintEnabled": false,
-    "python.pythonPath": "/usr/local/bin/python3",
     "scm.diffDecorationsGutterWidth": 4,
     "search.location": "panel",
     "search.smartCase": false,
     "telemetry.enableTelemetry": false,
-    "terraform.codelens.enabled": false,
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": [
