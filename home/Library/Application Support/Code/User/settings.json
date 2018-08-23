@@ -3,6 +3,7 @@
         "editor.quickSuggestions": false,
         "editor.wordWrap": "off"
     },
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.cursorBlinking": "solid",
     "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 17,
@@ -17,6 +18,7 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.openEditors.visible": 0,
     "explorer.sortOrder": "type",
+    "extensions.ignoreRecommendations": true,
     "files.autoSave": "onFocusChange",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
@@ -24,19 +26,11 @@
     "python.linting.enabled": false,
     "python.linting.pylintEnabled": false,
     "python.pythonPath": "/usr/local/bin/python3",
+    "scm.diffDecorationsGutterWidth": 4,
     "search.location": "panel",
     "search.smartCase": false,
     "telemetry.enableTelemetry": false,
     "terraform.codelens.enabled": false,
-    "window.closeWhenEmpty": false,
-    "window.newWindowDimensions": "inherit",
-    "window.openFilesInNewWindow": "on",
-    "window.openFoldersInNewWindow": "on",
-    "window.zoomLevel": -1,
-    "workbench.activityBar.visible": false,
-    "workbench.editor.showTabs": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.feedback.visible": false,
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": [
@@ -45,10 +39,16 @@
             "commands": [
                 "editor.action.indentLines"
             ]
-        },
+        }
     ],
-    "workbench.colorTheme": "Firewatch Theme",
-    "extensions.ignoreRecommendations": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "scm.diffDecorationsGutterWidth": 4
+    "window.closeWhenEmpty": false,
+    "window.newWindowDimensions": "inherit",
+    "window.openFilesInNewWindow": "on",
+    "window.openFoldersInNewWindow": "on",
+    "window.zoomLevel": -1,
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.editor.showTabs": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.feedback.visible": false
 }
