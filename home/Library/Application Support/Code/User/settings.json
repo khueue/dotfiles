@@ -5,6 +5,7 @@
     },
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.cursorBlinking": "solid",
+    "editor.dragAndDrop": false,
     "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 17,
     "editor.insertSpaces": false,
