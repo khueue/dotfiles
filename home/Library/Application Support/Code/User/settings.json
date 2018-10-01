@@ -44,8 +44,16 @@
     "window.openFoldersInNewWindow": "on",
     "window.zoomLevel": -1,
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "Firewatch Theme",
     "workbench.editor.showTabs": true,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.feedback.visible": false
+    "workbench.statusBar.feedback.visible": false,
+    "powermode.enabled": true,
+    "powermode.enableShake": false,
+    "powermode.explosionSize": 10,
+    "powermode.enableStatusBarComboTimer": false,
+    "powermode.enableStatusBarComboCounter": false,
+    "powermode.explosionOffset": 0.35,
+    "powermode.enableExplosions": true,
+    "powermode.presets": "particles"
 }
