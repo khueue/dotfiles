@@ -6,6 +6,15 @@
 2. Run `./copy-gits-to-local` to get everything on your local machine.
 3. Run `./link-locals-to-git` to link everything back into git again.
 
+### Add Something New
+
+To add the file `~/Library/Preferences/com.googlecode.iterm2.plist`, do this:
+
+```
+mkdir -p ./home/Library/Preferences/
+ln -f ~/Library/Preferences/com.googlecode.iterm2.plist ./home/Library/Preferences/com.googlecode.iterm2.plist
+```
+
 ## Useful Installs
 
 ### Homebrew
