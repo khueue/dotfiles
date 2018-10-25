@@ -48,7 +48,7 @@ end
 # If empty, disable colored output. Set it to empty if your terminal does not
 # support colors.
 if not set -q fish_command_timer_color
-  set fish_command_timer_color blue
+  set fish_command_timer_color yellow
 end
 
 # The display format of the current time.
@@ -219,4 +219,3 @@ function fish_command_timer_postexec -e fish_postexec
   # Finally, print output.
   echo -e "$output_str_colored"
 end
-
