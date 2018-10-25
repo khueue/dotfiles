@@ -44,7 +44,7 @@ Visual Studio Code
 MenuMeters
 ```
 
-#### VSCode
+## VSCode
 
 Listing extensions could look like this:
 
@@ -55,9 +55,7 @@ drwxr-xr-x  14 khu  staff  448 Aug  4 19:07 ulthes.theme-firewatch-1.0.3
 drwxr-xr-x  20 khu  staff  640 Aug  4 11:24 vscodevim.vim-0.15.7
 ```
 
-## Configuration
-
-### Key Repeat
+## Key Repeat
 
 ```
 # Allow key repeat.
@@ -69,3 +67,7 @@ defaults write -g InitialKeyRepeat -int 13
 # Normal minimum is 2 (30 ms).
 defaults write -g KeyRepeat -int 1.5
 ```
+
+## iTerm2 Themes
+
+https://iterm2colorschemes.com/
