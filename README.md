@@ -21,12 +21,18 @@ ln -f ~/Library/Preferences/com.googlecode.iterm2.plist ./home/Library/Preferenc
 
 ```
 $ brew leaves
-awscli
 bash-completion
 fish
 git
 htop
+python
+swi-prolog
 tree
+watch
+
+$ brew cask ls
+keepingyouawake
+minikube
 ```
 
 Running Minikube (local kubernetes):
