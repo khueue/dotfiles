@@ -46,7 +46,6 @@ Running Minikube (local kubernetes):
 limes
 1Password
 Dropbox
-Caffeine
 Docker
 Chrome
 GrandPerspective
