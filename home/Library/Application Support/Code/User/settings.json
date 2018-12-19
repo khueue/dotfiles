@@ -15,7 +15,6 @@
         80
     ],
     "editor.scrollBeyondLastLine": false,
-    "editor.tabSize": 8,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.openEditors.visible": 0,
@@ -59,9 +58,11 @@
     "window.openFoldersInNewWindow": "on",
     "window.zoomLevel": -1,
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Plastic",
+    "workbench.colorTheme": "Revelation",
     "workbench.editor.showTabs": true,
     "workbench.fontAliasing": "auto",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.feedback.visible": false
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "indentRainbow.updateDelay": 150
 }
