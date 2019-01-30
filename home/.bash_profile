@@ -28,4 +28,4 @@ if [ -f "$HOME/.bashrc" ]; then
 fi
 
 # Continue with fish!
-fish
+#fish

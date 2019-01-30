@@ -5,8 +5,8 @@
     },
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.cursorBlinking": "solid",
-    "editor.dragAndDrop": false,
-    "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
+    "editor.dragAndDrop": true,
+    "editor.fontFamily": "'Code New Roman', 'Borg Sans Mono', Menlo, 'Courier New', monospace",
     "editor.fontSize": 18,
     "editor.insertSpaces": false,
     "editor.minimap.enabled": false,
@@ -56,13 +56,12 @@
     "window.newWindowDimensions": "inherit",
     "window.openFilesInNewWindow": "on",
     "window.openFoldersInNewWindow": "on",
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Revelation",
     "workbench.editor.showTabs": true,
-    "workbench.fontAliasing": "auto",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false,
     "workbench.editor.highlightModifiedTabs": true,
-    "indentRainbow.updateDelay": 150
+    "indentRainbow.updateDelay": 150,
+    "workbench.colorTheme": "Slime"
 }
