@@ -16,7 +16,7 @@
     ],
     "editor.scrollBeyondLastLine": false,
     "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDragAndDrop": true,
     "explorer.openEditors.visible": 0,
     "explorer.sortOrder": "type",
     "extensions.ignoreRecommendations": true,
@@ -24,13 +24,14 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "powermode.enabled": true,
+    "indentRainbow.updateDelay": 250,
     "powermode.enableExplosions": true,
     "powermode.enableShake": false,
     "powermode.enableStatusBarComboCounter": false,
     "powermode.enableStatusBarComboTimer": false,
-    "powermode.explosionOffset": 0.35,
-    "powermode.explosionSize": 10,
+    "powermode.enabled": true,
+    "powermode.explosionOffset": 0.4,
+    "powermode.explosionSize": 8,
     "powermode.presets": "particles",
     "prolog.executablePath": "/dev/null",
     "prolog.format.enabled": false,
@@ -42,6 +43,10 @@
     "search.location": "panel",
     "search.smartCase": false,
     "telemetry.enableTelemetry": false,
+    "vim.highlightedyank.duration": 30,
+    "vim.highlightedyank.enable": true,
+    "vim.hlsearch": true,
+    "vim.sneak": true,
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": [
@@ -58,10 +63,8 @@
     "window.openFoldersInNewWindow": "on",
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": false,
-    "workbench.editor.showTabs": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.feedback.visible": false,
+    "workbench.colorTheme": "Mellow",
     "workbench.editor.highlightModifiedTabs": true,
-    "indentRainbow.updateDelay": 150,
-    "workbench.colorTheme": "Slime"
-}
+    "workbench.editor.showTabs": true,
+    "workbench.startupEditor": "newUntitledFile"
+    }
