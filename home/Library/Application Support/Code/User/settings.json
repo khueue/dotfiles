@@ -63,8 +63,9 @@
     "window.openFoldersInNewWindow": "on",
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Slime",
+    "workbench.colorTheme": "Ayu Mirage Bordered",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.showTabs": true,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.indent": 20
     }
