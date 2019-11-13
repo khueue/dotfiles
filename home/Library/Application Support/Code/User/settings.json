@@ -1,10 +1,10 @@
 {
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
     "[markdown]": {
         "editor.quickSuggestions": false,
         "editor.wordWrap": "off"
-    },
-    "[javascript]": {
-        "editor.formatOnSave": true
     },
     "[typescript]": {
         "editor.formatOnSave": true
@@ -12,7 +12,8 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.cursorBlinking": "solid",
     "editor.dragAndDrop": false,
-    "editor.fontFamily": "'Code New Roman', 'Borg Sans Mono', Menlo, 'Courier New', monospace",
+    "editor.find.addExtraSpaceOnTop": false,
+    "editor.fontFamily": "'Borg Sans Mono', 'Code New Roman', Menlo, 'Courier New', monospace",
     "editor.fontSize": 18,
     "editor.insertSpaces": false,
     "editor.minimap.enabled": false,
@@ -29,20 +30,8 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "indentRainbow.updateDelay": 250,
-    "powermode.enableExplosions": true,
-    "powermode.enableShake": false,
-    "powermode.enableStatusBarComboCounter": false,
-    "powermode.enableStatusBarComboTimer": false,
-    "powermode.explosionOffset": 0.4,
-    "powermode.explosionSize": 8,
-    "powermode.presets": "particles",
-    "prolog.executablePath": "/dev/null",
-    "prolog.format.enabled": false,
-    "prolog.format.insertSpaces": false,
-    "prolog.format.tabSize": 8,
-    "prolog.linter.delay": 500000000,
-    "prolog.linter.run": "never",
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
     "scm.diffDecorationsGutterWidth": 5,
     "search.location": "panel",
     "search.smartCase": false,
@@ -75,17 +64,12 @@
     "window.openFoldersInNewWindow": "on",
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": false,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#222"
+    },
+    "workbench.colorTheme": "Plastic",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.showTabs": true,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 22,
-    "editor.find.addExtraSpaceOnTop": false,
-    "prettier.singleQuote": true,
-    "prettier.trailingComma": "all",
-    "workbench.colorTheme": "Oblivion",
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
-    }
+    "workbench.tree.indent": 22
 }
