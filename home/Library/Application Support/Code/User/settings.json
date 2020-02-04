@@ -1,75 +1,75 @@
 {
-    "[javascript]": {
-        "editor.formatOnSave": true
-    },
-    "[markdown]": {
-        "editor.quickSuggestions": false,
-        "editor.wordWrap": "off"
-    },
-    "[typescript]": {
-        "editor.formatOnSave": true
-    },
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.cursorBlinking": "solid",
-    "editor.dragAndDrop": false,
-    "editor.find.addExtraSpaceOnTop": false,
-    "editor.fontFamily": "'Borg Sans Mono', 'Code New Roman', Menlo, 'Courier New', monospace",
-    "editor.fontSize": 18,
-    "editor.insertSpaces": false,
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "boundary",
-    "editor.rulers": [
-        80
-    ],
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.openEditors.visible": 0,
-    "explorer.sortOrder": "type",
-    "extensions.ignoreRecommendations": true,
-    "files.autoSave": "onFocusChange",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "prettier.singleQuote": true,
-    "prettier.trailingComma": "all",
-    "scm.diffDecorationsGutterWidth": 5,
-    "search.location": "panel",
-    "search.smartCase": false,
-    "telemetry.enableTelemetry": false,
-    "vim.highlightedyank.duration": 30,
-    "vim.highlightedyank.enable": true,
-    "vim.hlsearch": true,
-    "vim.sneak": true,
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<shift+tab>"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
-        },
-        {
-            "before": [
-                "<tab>"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
-        }
-    ],
-    "window.closeWhenEmpty": false,
-    "window.newWindowDimensions": "inherit",
-    "window.openFilesInNewWindow": "on",
-    "window.openFoldersInNewWindow": "on",
-    "window.zoomLevel": 0,
-    "workbench.activityBar.visible": false,
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#222"
-    },
-    "workbench.colorTheme": "Plastic",
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.editor.showTabs": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 22
+	"[javascript]": {
+		"editor.formatOnSave": false
+	},
+	"[markdown]": {
+		"editor.quickSuggestions": false,
+		"editor.wordWrap": "off"
+	},
+	"[typescript]": {
+		"editor.formatOnSave": true
+	},
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.cursorBlinking": "solid",
+	"editor.cursorSurroundingLines": 2,
+	"editor.dragAndDrop": false,
+	"editor.find.addExtraSpaceOnTop": false,
+	"editor.fontFamily": "'Borg Sans Mono', 'Code New Roman', Menlo, 'Courier New', monospace",
+	"editor.fontSize": 18,
+	"editor.insertSpaces": false,
+	"editor.minimap.enabled": false,
+	"editor.renderWhitespace": "boundary",
+	"editor.rulers": [
+		80
+	],
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.openEditors.visible": 0,
+	"explorer.sortOrder": "type",
+	"extensions.ignoreRecommendations": true,
+	"files.autoSave": "onFocusChange",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"scm.diffDecorationsGutterWidth": 5,
+	"search.location": "panel",
+	"search.smartCase": false,
+	"telemetry.enableTelemetry": false,
+	"vetur.completion.autoImport": false,
+	"vim.highlightedyank.duration": 30,
+	"vim.highlightedyank.enable": true,
+	"vim.hlsearch": true,
+	"vim.sneak": true,
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"<shift+tab>"
+			],
+			"commands": [
+				"editor.action.outdentLines"
+			]
+		},
+		{
+			"before": [
+				"<tab>"
+			],
+			"commands": [
+				"editor.action.indentLines"
+			]
+		}
+	],
+	"window.closeWhenEmpty": false,
+	"window.newWindowDimensions": "inherit",
+	"window.openFilesInNewWindow": "on",
+	"window.openFoldersInNewWindow": "on",
+	"window.zoomLevel": 1,
+	"workbench.activityBar.visible": false,
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#222"
+	},
+	"workbench.colorTheme": "Ayu Mirage Bordered",
+	"workbench.editor.highlightModifiedTabs": true,
+	"workbench.editor.showTabs": true,
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.tree.indent": 22
 }
