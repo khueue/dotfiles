@@ -1,3 +1,4 @@
+# Mac is moving away from Bash.
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Terminal colours.
@@ -17,8 +18,6 @@ export LANG="en_US.UTF-8"
 
 export EDITOR="vim"
 
-export DOCKER_BUILDKIT=1
-
 # Customized prompt.
 BOLD="\[$(tput bold)\]"
 COLOR="\[$(tput setaf 3)\]"
@@ -30,4 +29,4 @@ if [ -f "$HOME/.bashrc" ]; then
 fi
 
 # Continue with fish!
-#fish
+fish
