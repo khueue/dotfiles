@@ -9,6 +9,8 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 export HISTFILESIZE=100000
 export HISTSIZE=100000
 
+export DOCKER_BUILDKIT=1
+
 # Locale (variables in descending precedence order).
 # See: http://pubs.opengroup.org/onlinepubs/7908799/xbd/envvar.html
 export LC_ALL=

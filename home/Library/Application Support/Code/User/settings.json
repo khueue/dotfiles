@@ -14,7 +14,7 @@
 	"editor.cursorSurroundingLines": 2,
 	"editor.dragAndDrop": false,
 	"editor.find.addExtraSpaceOnTop": false,
-	"editor.fontFamily": "Menlo, 'Code New Roman', 'Borg Sans Mono', Menlo, 'Courier New', monospace",
+	"editor.fontFamily": "JuliaMono, Menlo, 'Code New Roman', 'Borg Sans Mono', Menlo, 'Courier New', monospace",
 	"editor.fontSize": 18,
 	"editor.insertSpaces": false,
 	"editor.minimap.enabled": false,
@@ -73,11 +73,13 @@
 	"remote.extensionKind": {
 		"ms-azuretools.vscode-docker": "workspace"
 	},
-	"workbench.colorTheme": "Egoist One",
 	"editor.copyWithSyntaxHighlighting": false,
 	"timeline.excludeSources": [
 		"git-history"
 	],
 	"vetur.useWorkspaceDependencies": true,
-	"explorer.compactFolders": false
+	"explorer.compactFolders": false,
+	"javascript.updateImportsOnFileMove.enabled": "never",
+	"workbench.colorTheme": "Plastic",
+	"breadcrumbs.enabled": false
 }
