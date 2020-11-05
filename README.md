@@ -119,6 +119,16 @@ vim ~/Library/Preferences/com.apple.HIToolbox.plist
 # ... remove all references to the ones you don't want ...
 ```
 
+See:
+
+Edit: the method above seems to have stopped working in 10.9. This worked in both 10.9 or 10.8 though:
+
+Change the current input source to your custom keyboard layout.
+Open ~/Library/Preferences/com.apple.HIToolbox.plist (in 10.9) or ~/Library/Preferences/ByHost/com.apple.HIToolbox.*.plist (in 10.8 and earlier). You can convert the plist to XML with plutil -convert xml1.
+Remove the input source or input sources you want to disable from the AppleEnabledInputSources dictionary. If there is an AppleDefaultAsciiInputSource key, remove it.
+Restart.
+
+
 ## iTerm Themes
 
 https://iterm2colorschemes.com/
