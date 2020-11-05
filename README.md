@@ -6,7 +6,7 @@
 2. Run `./copy-gits-to-local` to get everything on your local machine.
 3. Run `./link-locals-to-git` to link everything back into git again.
 
-### Add Something New
+## Add Something New
 
 To add the file `~/Library/Preferences/com.googlecode.iterm2.plist`, do this:
 
@@ -17,35 +17,19 @@ ln -f ~/Library/Preferences/com.googlecode.iterm2.plist ./home/Library/Preferenc
 
 ## Useful Installs
 
-### Homebrew
-
-```
-$ brew leaves
-awscli
-bash-completion
-fish
-git
-httpie
-jq
-swi-prolog
-tree
-watch
-
-$ brew list --cask
-keepingyouawake
-```
-
-### Other
+### Misc
 
 ```
 1Password
 Brave
 Chrome
 Cog
+Command Line Tools
 Docker
 Dropbox
 Firefox
 GrandPerspective
+Homebrew
 iTerm
 Limes
 MenuMeters
@@ -56,6 +40,23 @@ TotalSpaces2
 Transmission
 Visual Studio Code
 ```
+
+### Via Homebrew
+
+```
+$ brew leaves
+awscli
+bash-completion
+fish
+git
+httpie
+tree
+watch
+
+$ brew list --cask
+keepingyouawake
+```
+
 
 ## VSCode
 
@@ -111,3 +112,48 @@ defaults write -g KeyRepeat -int 1.5
 ## iTerm Themes
 
 https://iterm2colorschemes.com/
+
+
+## SSH Setup
+
+Create folders for keys:
+
+```
+mkdir -p ~/.ssh/keys
+mkdir -p ~/.ssh/keys/atuin
+mkdir -p ~/.ssh/keys/github
+mkdir -p ~/.ssh/keys/codecommit
+```
+
+Create keys as necessary:
+
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+In `~/.ssh/config`, configure different remotes:
+
+```
+Host github.com
+    User git
+    IdentityFile ~/.ssh/keys/github/private
+    IdentitiesOnly yes
+
+Host git-codecommit-private
+    HostName git-codecommit.eu-west-1.amazonaws.com
+    User APKA...
+    IdentityFile ~/.ssh/keys/codecommit/private
+    IdentitiesOnly yes
+
+Host git-codecommit-aws-playground
+	HostName git-codecommit.eu-west-1.amazonaws.com
+	User APKA...
+	IdentityFile ~/.ssh/keys/codecommit/aws-playground
+	IdentitiesOnly yes
+
+Host git-codecommit-aws-hejare
+	HostName git-codecommit.eu-west-1.amazonaws.com
+	User APKA...
+	IdentityFile ~/.ssh/keys/codecommit/aws-hejare
+	IdentitiesOnly yes
+```
