@@ -109,6 +109,16 @@ defaults write -g InitialKeyRepeat -int 13
 defaults write -g KeyRepeat -int 1.5
 ```
 
+## Keyboard
+
+```
+cp keyboard "~/Library/Keyboard Layouts/"
+# ... manually set current input source to new keyboard ...
+plutil -convert xml1 ~/Library/Preferences/com.apple.HIToolbox.plist
+vim ~/Library/Preferences/com.apple.HIToolbox.plist
+# ... remove all references to the ones you don't want ...
+```
+
 ## iTerm Themes
 
 https://iterm2colorschemes.com/
