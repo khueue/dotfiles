@@ -7,7 +7,7 @@
 		"editor.wordWrap": "off"
 	},
 	"[typescript]": {
-		"editor.formatOnSave": true
+		"editor.formatOnSave": false
 	},
 	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.cursorBlinking": "solid",
@@ -61,7 +61,7 @@
 	"window.newWindowDimensions": "inherit",
 	"window.openFilesInNewWindow": "on",
 	"window.openFoldersInNewWindow": "on",
-	"window.zoomLevel": -1,
+	"window.zoomLevel": 0,
 	"workbench.activityBar.visible": false,
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#222"
@@ -70,9 +70,6 @@
 	"workbench.editor.showTabs": true,
 	"workbench.startupEditor": "newUntitledFile",
 	"workbench.tree.indent": 22,
-	"remote.extensionKind": {
-		"ms-azuretools.vscode-docker": "workspace"
-	},
 	"editor.copyWithSyntaxHighlighting": false,
 	"timeline.excludeSources": [
 		"git-history"
@@ -80,6 +77,9 @@
 	"vetur.useWorkspaceDependencies": true,
 	"explorer.compactFolders": false,
 	"javascript.updateImportsOnFileMove.enabled": "never",
-	"workbench.colorTheme": "Plastic",
-	"breadcrumbs.enabled": false
+	"workbench.colorTheme": "Slime Solid",
+	"breadcrumbs.enabled": false,
+	"editor.largeFileOptimizations": false,
+	"typescript.updateImportsOnFileMove.enabled": "never",
+	"vetur.format.options.useTabs": true
 }

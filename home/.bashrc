@@ -8,5 +8,3 @@ alias c='clear'
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     source $(brew --prefix)/etc/bash_completion
 fi
-
-complete -C aws_completer aws
