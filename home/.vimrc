@@ -17,6 +17,8 @@ vmap < <gv
 vnoremap <tab> >gv
 vnoremap <S-tab> <gv
 
+"set title
+
 set tabstop=4                   " 4 spaces per tab
 set shiftwidth=4                " Indent 4 spaces
 set softtabstop=4               " Tab stop at 4 spaces

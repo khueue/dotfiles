@@ -9,19 +9,23 @@
 	"[typescript]": {
 		"editor.formatOnSave": false
 	},
+	"breadcrumbs.enabled": false,
 	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.copyWithSyntaxHighlighting": false,
 	"editor.cursorBlinking": "solid",
 	"editor.cursorSurroundingLines": 2,
 	"editor.dragAndDrop": false,
 	"editor.find.addExtraSpaceOnTop": false,
-	"editor.fontFamily": "JuliaMono, Menlo, 'Code New Roman', 'Borg Sans Mono', Menlo, 'Courier New', monospace",
+	"editor.fontFamily": "Menlo, JuliaMono,  'Code New Roman', 'Borg Sans Mono', Menlo, 'Courier New', monospace",
 	"editor.fontSize": 18,
 	"editor.insertSpaces": false,
+	"editor.largeFileOptimizations": false,
 	"editor.minimap.enabled": false,
 	"editor.renderWhitespace": "boundary",
 	"editor.rulers": [
 		80
 	],
+	"explorer.compactFolders": false,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.openEditors.visible": 0,
@@ -31,10 +35,18 @@
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
+	"javascript.updateImportsOnFileMove.enabled": "never",
 	"scm.diffDecorationsGutterWidth": 5,
 	"search.smartCase": false,
 	"telemetry.enableTelemetry": false,
+	"timeline.excludeSources": [
+		"git-history"
+	],
+	"typescript.updateImportsOnFileMove.enabled": "never",
+	"vetur.format.enable": true,
 	"vetur.completion.autoImport": false,
+	"vetur.format.options.useTabs": true,
+	"vetur.useWorkspaceDependencies": true,
 	"vim.highlightedyank.duration": 30,
 	"vim.highlightedyank.enable": true,
 	"vim.hlsearch": true,
@@ -61,25 +73,17 @@
 	"window.newWindowDimensions": "inherit",
 	"window.openFilesInNewWindow": "on",
 	"window.openFoldersInNewWindow": "on",
-	"window.zoomLevel": 0,
 	"workbench.activityBar.visible": false,
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#222"
 	},
+	"workbench.colorTheme": "ReUI Default Bordered (react-native)",
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.editor.showTabs": true,
 	"workbench.startupEditor": "newUntitledFile",
 	"workbench.tree.indent": 22,
-	"editor.copyWithSyntaxHighlighting": false,
-	"timeline.excludeSources": [
-		"git-history"
-	],
-	"vetur.useWorkspaceDependencies": true,
-	"explorer.compactFolders": false,
-	"javascript.updateImportsOnFileMove.enabled": "never",
-	"workbench.colorTheme": "Slime Solid",
-	"breadcrumbs.enabled": false,
-	"editor.largeFileOptimizations": false,
-	"typescript.updateImportsOnFileMove.enabled": "never",
-	"vetur.format.options.useTabs": true
+	"svelte.plugin.svelte.format.config.svelteStrictMode": true,
+	"javascript.format.enable": false,
+	"html.format.enable": false,
+	"emmet.triggerExpansionOnTab": true
 }

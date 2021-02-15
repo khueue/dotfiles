@@ -30,7 +30,6 @@ Dropbox
 Firefox
 GrandPerspective
 Homebrew
-iTerm
 Limes
 MenuMeters
 Moom
@@ -46,15 +45,17 @@ Visual Studio Code
 ```
 $ brew leaves
 awscli
-bash-completion
+colordiff
 fish
 git
-httpie
+heroku/brew/heroku
+jq
 tree
 watch
 
 $ brew list --cask
 keepingyouawake
+kitty
 ```
 
 
