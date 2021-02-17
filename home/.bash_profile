@@ -1,6 +1,10 @@
 # Mac is moving away from Bash.
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+if [ -f "$HOME/.secrets.sh" ]; then
+    source "$HOME/.secrets.sh"
+fi
+
 # Terminal colours.
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
