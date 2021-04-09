@@ -77,7 +77,7 @@
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#222"
 	},
-	"workbench.colorTheme": "ReUI Default Bordered (react-native)",
+	"workbench.colorTheme": "Slime Solid",
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.editor.showTabs": true,
 	"workbench.startupEditor": "newUntitledFile",
