@@ -3,7 +3,7 @@ abbr q 'exit'
 abbr lla 'ls -al'
 
 function cl
-    cd $argv ; ls -al ./
+    cd $argv ; ls -l ./
 end
 
 abbr khet 'cl ~/Documents/code/personal/khet'
