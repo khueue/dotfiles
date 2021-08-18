@@ -7,10 +7,9 @@ function cl
 end
 
 abbr khet 'cl ~/Documents/code/personal/khet'
-abbr appscode 'cl ~/Documents/code/personal/khet/apps-code'
-abbr webapp 'cl ~/Documents/code/personal/khet/apps-code/web-app'
-abbr webfront 'cl ~/Documents/code/personal/khet/apps-code/web-front'
-abbr infracdk 'cl ~/Documents/code/personal/khet/infra-cdk'
+abbr appprojects 'cl ~/Documents/code/personal/khet/app-projects'
+abbr webapp 'cl ~/Documents/code/personal/khet/app-projects/web-app'
+abbr khetsession 'kitty --session ~/.config/kitty/khet.session'
 
 abbr tphon 'cl ~/Documents/code/personal/tphon'
 

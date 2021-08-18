@@ -1,0 +1,13 @@
+layout fat
+
+cd ~/Documents/code/personal/khet
+launch fish
+
+cd ~/Documents/code/personal/khet/app-projects/db-firebase
+launch fish -C make
+
+cd ~/Documents/code/personal/khet/app-projects/web-app
+launch fish -C make
+
+cd ~/Documents/code/personal/khet/app-projects/web-app/e2e
+launch fish -C make

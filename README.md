@@ -45,7 +45,6 @@ Visual Studio Code
 ```
 $ brew leaves
 awscli
-colordiff
 fish
 git
 heroku/brew/heroku
@@ -160,12 +159,6 @@ Host git-codecommit-private
     User APKA...
     IdentityFile ~/.ssh/keys/codecommit/private
     IdentitiesOnly yes
-
-Host git-codecommit-aws-playground
-	HostName git-codecommit.eu-west-1.amazonaws.com
-	User APKA...
-	IdentityFile ~/.ssh/keys/codecommit/aws-playground
-	IdentitiesOnly yes
 
 Host git-codecommit-aws-hejare
 	HostName git-codecommit.eu-west-1.amazonaws.com

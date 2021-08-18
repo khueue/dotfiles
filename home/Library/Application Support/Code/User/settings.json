@@ -25,7 +25,6 @@
 	"editor.rulers": [
 		80
 	],
-	"explorer.compactFolders": false,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.openEditors.visible": 0,
@@ -77,19 +76,22 @@
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#222"
 	},
-	"workbench.colorTheme": "Nord",
+	"workbench.colorTheme": "Hawaii (rainglow)",
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.editor.showTabs": true,
 	"workbench.startupEditor": "newUntitledFile",
-	"workbench.tree.indent": 22,
+	"workbench.tree.indent": 26,
 	"svelte.plugin.svelte.format.config.svelteStrictMode": true,
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
 	"javascript.format.enable": false,
 	"html.format.enable": false,
 	"emmet.triggerExpansionOnTab": true,
 	"python.showStartPage": false,
 	"python.languageServer": "Pylance",
 	"workbench.editorAssociations": {
-		"*.ipynb": "jupyter.notebook.ipynb"
+		"*.ipynb": "jupyter-notebook"
 	},
 	"editor.cursorStyle": "line",
 	"editor.lineNumbers": "on",
@@ -97,10 +99,12 @@
 	"editor.wordWrap": "off",
 	"workbench.editor.untitled.hint": "hidden",
 	"editor.inlineSuggest.enabled": true,
-	"github.copilot.enable": {
-		"*": false,
-		"yaml": false,
-		"plaintext": false,
-		"markdown": false
-	}
+	"explorer.compactFolders": false,
+	"explorer.incrementalNaming": "smart",
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	"window.zoomLevel": -1,
+	"python.analysis.typeCheckingMode": "basic"
 }
