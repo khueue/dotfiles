@@ -30,12 +30,10 @@ Dropbox
 Firefox
 GrandPerspective
 Homebrew
-Limes
 MenuMeters
 Moom
 Slack
 Spotify
-TotalSpaces2
 Transmission
 Visual Studio Code
 ```

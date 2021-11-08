@@ -31,7 +31,6 @@
 	"explorer.sortOrder": "type",
 	"extensions.ignoreRecommendations": true,
 	"files.autoSave": "onFocusChange",
-	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
 	"javascript.updateImportsOnFileMove.enabled": "never",
@@ -76,7 +75,7 @@
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#222"
 	},
-	"workbench.colorTheme": "Hawaii (rainglow)",
+	"workbench.colorTheme": "Tonic (rainglow)",
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.editor.showTabs": true,
 	"workbench.startupEditor": "newUntitledFile",
@@ -105,6 +104,11 @@
 		"default": "right",
 		"jupyter-notebook": "left"
 	},
+	"python.analysis.typeCheckingMode": "basic",
+	"svelte.enable-ts-plugin": true,
+	"[json]": {
+		"editor.defaultFormatter": "denoland.vscode-deno"
+	},
 	"window.zoomLevel": -1,
-	"python.analysis.typeCheckingMode": "basic"
+	"files.insertFinalNewline": true
 }
