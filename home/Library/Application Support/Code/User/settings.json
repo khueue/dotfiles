@@ -3,7 +3,11 @@
 		"editor.formatOnSave": false
 	},
 	"[markdown]": {
-		"editor.quickSuggestions": false,
+		"editor.quickSuggestions": {
+			"comments": "off",
+			"strings": "off",
+			"other": "off"
+		},
 		"editor.wordWrap": "off"
 	},
 	"[typescript]": {
@@ -33,7 +37,7 @@
 	"files.autoSave": "onFocusChange",
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
-	"javascript.updateImportsOnFileMove.enabled": "never",
+	"javascript.updateImportsOnFileMove.enabled": "always",
 	"scm.diffDecorationsGutterWidth": 5,
 	"search.smartCase": false,
 	"telemetry.enableTelemetry": false,
@@ -75,7 +79,7 @@
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#222"
 	},
-	"workbench.colorTheme": "Tonic (rainglow)",
+	"workbench.colorTheme": "Userscape Contrast (rainglow)",
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.editor.showTabs": true,
 	"workbench.startupEditor": "newUntitledFile",
@@ -109,6 +113,5 @@
 	"[json]": {
 		"editor.defaultFormatter": "denoland.vscode-deno"
 	},
-	"window.zoomLevel": -1,
 	"files.insertFinalNewline": true
 }
