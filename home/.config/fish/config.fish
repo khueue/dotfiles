@@ -13,7 +13,7 @@ abbr khetsession 'kitty --session ~/.config/kitty/khet.session'
 
 abbr tphon 'cl ~/Documents/code/personal/tphon'
 
-abbr mm 'cl ~/Documents/code/work/mentimeter'
+abbr work 'cl ~/Documents/code/work'
 
 abbr bs 'bin/synth'
 abbr bt 'bin/tf'
