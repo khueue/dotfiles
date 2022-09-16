@@ -34,7 +34,8 @@ if [ -f "$HOME/.bashrc" ]; then
     source "$HOME/.bashrc"
 fi
 
-export PATH="/usr/local/opt/curl/bin:$PATH"
+# Had issues with Kitty messing up SSH terminals.
+export TERM=xterm-256color
 
 # Continue with fish!
 fish
