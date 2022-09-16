@@ -1,9 +1,9 @@
 __default:
 	@ cat Makefile
 
-install_assume:
-	chmod +x ./assume
-	ln ./assume /usr/local/bin/assume
+install: uninstall
+	ln ./useaws /usr/local/bin/useaws
+	chmod +x /usr/local/bin/useaws
 
-uninstall_assume:
-	rm /usr/local/bin/assume
+uninstall:
+	rm -f /usr/local/bin/useaws
