@@ -27,6 +27,7 @@
 
 [pull]
 	stat = true
+	rebase = true
 
 [push]
 	default = simple
