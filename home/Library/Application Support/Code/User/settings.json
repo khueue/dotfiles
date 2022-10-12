@@ -79,7 +79,7 @@
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#222"
 	},
-	"workbench.colorTheme": "Userscape Contrast (rainglow)",
+	"workbench.colorTheme": "Morass (rainglow)",
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.editor.showTabs": true,
 	"workbench.startupEditor": "newUntitledFile",
