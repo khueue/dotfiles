@@ -1,0 +1,44 @@
+[user]
+	name = Sebastian Lundström
+	email = khueue@gmail.com
+
+[alias]
+	ci = commit
+	st = status
+	co = checkout
+	lo = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=iso
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+[core]
+	whitespace = trailing-space,space-before-tab
+	excludesfile = ~/.gitignore
+	editor = vim
+
+[diff]
+	mnemonicprefix = true
+	noprefix = true
+
+[merge]
+	ff = true
+	stat = true
+
+[branch]
+	autosetupmerge = true
+
+[pull]
+	stat = true
+	rebase = true
+
+[push]
+	default = simple
+	followTags = true
+	autoSetupRemote = true
+
+[rerere]
+	enabled = true
+
+[color]
+	ui = true
+
+[tag]
+	sort = version:refname
