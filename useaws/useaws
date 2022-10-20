@@ -4,7 +4,8 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-script=$(basename "$0")
+VERSION=1.0.0
+SCRIPT=$(basename "$0")
 
 function usage {
 	echo "Set active AWS credentials from user, role or env."
@@ -20,12 +21,12 @@ function usage {
 	echo "named sections."
 	echo
 	echo "Usage:"
-	echo "$ ${script} role <profile in ~/.aws/config>"
-	echo "$ ${script} user <profile in ~/.aws/credentials>"
-	echo "$ ${script} env (sets active credentials from env vars)"
-	echo "$ ${script} whoami (shows active credentials)"
-	echo "$ ${script} no (unsets active credentials)"
-	echo "$ ${script} sts_region <region> (set STS region to use)"
+	echo "$ ${SCRIPT} role <profile in ~/.aws/config>"
+	echo "$ ${SCRIPT} user <profile in ~/.aws/credentials>"
+	echo "$ ${SCRIPT} env (sets active credentials from env vars)"
+	echo "$ ${SCRIPT} whoami (shows active credentials)"
+	echo "$ ${SCRIPT} no (unsets active credentials)"
+	echo "$ ${SCRIPT} sts_region <region> (set STS region to use)"
 	exit 1
 }
 
@@ -45,7 +46,7 @@ which jq > /dev/null || (echo "Missing dependency: jq" && false)
 
 function write_signature {
 	# Saves to ~/.aws/config:
-	aws configure set default.managed_by "${script}"
+	aws configure set default.managed_by "${SCRIPT}"
 }
 
 function set_default_credentials {
@@ -118,17 +119,17 @@ if [[ "${action}" == "sts_region" ]]; then
 		echo "!!! Second arg must be an AWS region, like eu-west-1"
 		exit 1
 	fi
-	aws configure set sts_region "${sts_region}" --profile "${script}"
+	aws configure set sts_region "${sts_region}" --profile "${SCRIPT}"
 
 	echo "Set STS region to: ${sts_region}"
 	exit 0
 fi
 
 # Fetch region to use for STS endpoint.
-sts_region=$(aws configure get ${script}.sts_region || echo)
+sts_region=$(aws configure get ${SCRIPT}.sts_region || echo)
 if [[ "${sts_region}" == "" ]]; then
 	echo "--- NOTE: To optimize me, tell me a region close to you:"
-	echo "--- For example: ${script} sts_region eu-west-1"
+	echo "--- For example: ${SCRIPT} sts_region eu-west-1"
 	echo
 else
 	export AWS_REGION="${sts_region}"
