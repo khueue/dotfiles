@@ -1,9 +1,11 @@
 __default:
 	@ cat Makefile
 
+SCRIPT_EXE=/usr/local/bin/useaws
+
 install: uninstall
-	ln ./useaws /usr/local/bin/useaws
-	chmod +x /usr/local/bin/useaws
+	ln ./useaws $(SCRIPT_EXE)
+	chmod +x $(SCRIPT_EXE)
 
 uninstall:
-	rm -f /usr/local/bin/useaws
+	rm -f $(SCRIPT_EXE)
