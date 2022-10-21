@@ -4,7 +4,7 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-VERSION=1.0.0
+VERSION=1.0.1
 SCRIPT=$(basename "$0")
 
 function usage {
@@ -33,12 +33,13 @@ function usage {
 AWS_DIR=~/.aws
 AWS_CACHE_DIR=${AWS_DIR}/cli/cache
 
-# Ensure files exist and have final newlines (`aws configure` messes up otherwise).
+# Ensure files exist and have final newlines (`aws configure` messes up
+# otherwise). Two newlines makes for nice separation between sections.
 mkdir -p "${AWS_DIR}"
 touch "${AWS_DIR}/config"
 touch "${AWS_DIR}/credentials"
-[[ -n $(tail -c1 "${AWS_DIR}/config") ]] && echo >> "${AWS_DIR}/config"
-[[ -n $(tail -c1 "${AWS_DIR}/credentials") ]] && echo >> "${AWS_DIR}/credentials"
+[[ -n $(tail -c1 "${AWS_DIR}/config") ]] && echo -e "\n" >> "${AWS_DIR}/config"
+[[ -n $(tail -c1 "${AWS_DIR}/credentials") ]] && echo -e "\n" >> "${AWS_DIR}/credentials"
 
 # Check dependencies.
 which aws > /dev/null || (echo "Missing dependency: aws" && false)
