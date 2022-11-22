@@ -88,7 +88,7 @@ if [[ "${action}" == "env" ]]; then
 	echo "Set default credentials from env vars (with ID: ${access_key_id})"
 	echo
 	echo "NOTE: You no longer need the AWS_* variables in your shell, so feel"
-	echo "to unset them or exit this shell."
+	echo "free to unset them or exit this shell."
 	exit 0
 fi
 
