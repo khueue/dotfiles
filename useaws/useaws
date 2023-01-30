@@ -21,11 +21,14 @@ function usage {
 	echo "named sections."
 	echo
 	echo "Usage:"
+	echo
 	echo "$ ${SCRIPT} role <profile in ~/.aws/config>"
 	echo "$ ${SCRIPT} user <profile in ~/.aws/credentials>"
 	echo "$ ${SCRIPT} env (sets active credentials from env vars)"
-	echo "$ ${SCRIPT} whoami (shows active credentials)"
+	echo
+	echo "$ ${SCRIPT} who (shows active credentials)"
 	echo "$ ${SCRIPT} no (unsets active credentials)"
+	echo
 	echo "$ ${SCRIPT} sts_region <region> (set STS region to use)"
 	exit 1
 }
@@ -136,7 +139,7 @@ else
 	export AWS_REGION="${sts_region}"
 fi
 
-if [[ "${action}" == "whoami" ]]; then
+if [[ "${action}" == "who" ]]; then
 	aws sts get-caller-identity
 
 	exit 0
