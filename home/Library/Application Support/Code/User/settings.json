@@ -41,9 +41,6 @@
 	"scm.diffDecorationsGutterWidth": 5,
 	"search.smartCase": false,
 	"telemetry.enableTelemetry": false,
-	"timeline.excludeSources": [
-		"git-history"
-	],
 	"typescript.updateImportsOnFileMove.enabled": "never",
 	"vetur.format.enable": true,
 	"vetur.completion.autoImport": false,
@@ -79,7 +76,7 @@
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#222"
 	},
-	"workbench.colorTheme": "Morass (rainglow)",
+	"workbench.colorTheme": "Ayu Mirage Bordered",
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.editor.showTabs": true,
 	"workbench.startupEditor": "newUntitledFile",
@@ -113,5 +110,6 @@
 	"[json]": {
 		"editor.defaultFormatter": "denoland.vscode-deno"
 	},
-	"files.insertFinalNewline": true
+	"files.insertFinalNewline": true,
+	"workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons"
 }

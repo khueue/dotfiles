@@ -1,5 +1,5 @@
 [includeIf "gitdir:~/Documents/code/personal/"]
   path = ~/.gitconfig-personal
 
-[includeIf "gitdir:~/Documents/code/work/cm/"]
-  path = ~/.gitconfig-cm
+[includeIf "gitdir:~/Documents/code/work/vh/"]
+  path = ~/.gitconfig-vh

@@ -96,7 +96,7 @@ drwxr-xr-x  12 khu  staff  384 Jan 16 12:35 will-stone.plastic-4.3.1/
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Normal minimum is 15 (225 ms).
-defaults write -g InitialKeyRepeat -int 13
+defaults write -g InitialKeyRepeat -int 15
 
 # Normal minimum is 2 (30 ms).
 defaults write -g KeyRepeat -int 1.5
