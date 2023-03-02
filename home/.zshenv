@@ -23,7 +23,9 @@ function precmd() {
 		unset timer
 	fi
 	vcs_info
-	PROMPT="${NL}"
+	PROMPT=""
+	PROMPT=%(?..%B(%?%)%b)
+	PROMPT+="${NL}"
 	PROMPT+="%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f${NL}"
 	PROMPT+="%F{red}$%f "
 }
@@ -53,10 +55,8 @@ alias bs="bin/synth"
 alias bt="bin/tf"
 
 # Folders.
+alias personal="cd ~/Documents/code/personal"
 alias vh="cd ~/Documents/code/work/vh"
-
-# Granted.dev.
-alias assume="source assume"
 
 # ----------------------------------------------
 # Fish-like autosuggestions.
@@ -65,3 +65,12 @@ alias assume="source assume"
 # ----------------------------------------------
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# ----------------------------------------------
+# Granted.dev
+# ----------------------------------------------
+
+alias assume="source assume"
+
+fpath=(/Users/khu/.granted/zsh_autocomplete/assume/ $fpath)
+fpath=(/Users/khu/.granted/zsh_autocomplete/granted/ $fpath)
