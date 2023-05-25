@@ -72,11 +72,10 @@
 	"window.newWindowDimensions": "inherit",
 	"window.openFilesInNewWindow": "on",
 	"window.openFoldersInNewWindow": "on",
-	"workbench.activityBar.visible": false,
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#222"
 	},
-	"workbench.colorTheme": "Default Dark+ Experimental",
+	"workbench.colorTheme": "night nord theme",
 	"workbench.editor.highlightModifiedTabs": true,
 	"workbench.editor.showTabs": true,
 	"workbench.startupEditor": "newUntitledFile",
@@ -108,9 +107,13 @@
 	"python.analysis.typeCheckingMode": "basic",
 	"svelte.enable-ts-plugin": true,
 	"[json]": {
-		"editor.defaultFormatter": "denoland.vscode-deno"
+		"editor.defaultFormatter": "vscode.json-language-features"
 	},
 	"files.insertFinalNewline": true,
 	"workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
+	"workbench.activityBar.visible": false,
+	"terraform.experimentalFeatures.validateOnSave": true,
+	"redhat.telemetry.enabled": false,
+	"powershell.promptToUpdatePowerShell": false,
 	"window.zoomLevel": -1
 }

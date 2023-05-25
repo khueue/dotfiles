@@ -1,4 +1,15 @@
 # ----------------------------------------------
+# History.
+#
+# https://unix.stackexchange.com/questions/389881/history-isnt-preserved-in-zsh
+# ----------------------------------------------
+
+HISTSIZE=10000
+SAVEHIST=1000
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY
+
+# ----------------------------------------------
 # Prompt.
 #
 # See:
@@ -24,10 +35,24 @@ function precmd() {
 	fi
 	vcs_info
 	PROMPT=""
-	PROMPT=%(?..%B(%?%)%b)
+
+	# Error code from previous command.
+	PROMPT+=%(?..%F{red}(%?%)${NL}%f)
+
+	# Current time, working dir, VCS info.
 	PROMPT+="${NL}"
-	PROMPT+="%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f${NL}"
-	PROMPT+="%F{red}$%f "
+	PROMPT+="%F{green}%*%f"
+	PROMPT+=" %F{blue}%~%f"
+	PROMPT+=" %F{yellow}${vcs_info_msg_0_}%f"
+	PROMPT+="${NL}"
+
+	# Dynamic context.
+	if [ $AWS_PROFILE ]; then
+		PROMPT+="%F{white}aws: ${AWS_PROFILE}%f${NL}"
+	fi
+
+	# Prompt CTA.
+	PROMPT+="%F{yellow}$%f%F{yellow}$%f%F{yellow}$%f "
 }
 
 # ----------------------------------------------
@@ -49,6 +74,7 @@ alias c="clear"
 alias q="exit"
 alias t="tree"
 alias ll="ls -al"
+alias ".."="cd .."
 
 # TF CDK.
 alias bs="bin/synth"
@@ -57,6 +83,25 @@ alias bt="bin/tf"
 # Folders.
 alias personal="cd ~/Documents/code/personal"
 alias vh="cd ~/Documents/code/work/vh"
+
+# Kubernetes.
+alias k="kubectl"
+
+# Terraform.
+alias tf="terraform"
+alias tfia="terraform init ; terraform apply"
+
+# AWS SSO.
+alias a-login="a-systest-admin ; aws sso login --region eu-north-1"
+
+# Envs.
+alias a-mgmt-admin="export AWS_PROFILE=aira.MGMT.admin"
+alias a-systest-admin="export AWS_PROFILE=aira.TEST.admin ; kubectx arn:aws:eks:eu-north-1:361629632765:cluster/systest"
+alias a-uat-admin="export AWS_PROFILE=aira.TEST.admin ; kubectx arn:aws:eks:eu-north-1:361629632765:cluster/uat"
+alias a-prod-admin="export AWS_PROFILE=aira.PROD.admin ; kubectx arn:aws:eks:eu-north-1:528895488893:cluster/prod"
+alias a-tools-admin="export AWS_PROFILE=aira.TOOLS.admin ; kubectx arn:aws:eks:eu-north-1:660263384063:cluster/tools"
+
+alias atuin-admin="export AWS_PROFILE=atuin.ADMIN"
 
 # ----------------------------------------------
 # Fish-like autosuggestions.
@@ -67,10 +112,18 @@ alias vh="cd ~/Documents/code/work/vh"
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ----------------------------------------------
+# Makefile auto-complete.
+#
+# See: https://unix.stackexchange.com/questions/657256/autocompletion-of-makefile-with-makro-in-zsh-not-correct-works-in-bash
+# ----------------------------------------------
+
+zstyle ':completion::complete:make:*:targets' call-command true
+
+# ----------------------------------------------
 # Granted.dev
 # ----------------------------------------------
 
 alias assume="source assume"
 
-fpath=(/Users/khu/.granted/zsh_autocomplete/assume/ $fpath)
-fpath=(/Users/khu/.granted/zsh_autocomplete/granted/ $fpath)
+#fpath=(/Users/khu/.granted/zsh_autocomplete/assume/ $fpath)
+#fpath=(/Users/khu/.granted/zsh_autocomplete/granted/ $fpath)
