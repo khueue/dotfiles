@@ -115,5 +115,6 @@
 	"terraform.experimentalFeatures.validateOnSave": true,
 	"redhat.telemetry.enabled": false,
 	"powershell.promptToUpdatePowerShell": false,
+	"git.openRepositoryInParentFolders": "always",
 	"window.zoomLevel": -1
 }

@@ -4,8 +4,8 @@
 # https://unix.stackexchange.com/questions/389881/history-isnt-preserved-in-zsh
 # ----------------------------------------------
 
-HISTSIZE=10000
-SAVEHIST=1000
+HISTSIZE=100000
+SAVEHIST=10000
 setopt SHARE_HISTORY
 setopt EXTENDED_HISTORY
 
@@ -87,21 +87,29 @@ alias vh="cd ~/Documents/code/work/vh"
 # Kubernetes.
 alias k="kubectl"
 
-# Terraform.
-alias tf="terraform"
-alias tfia="terraform init ; terraform apply"
-
 # AWS SSO.
-alias a-login="a-systest-admin ; aws sso login --region eu-north-1"
+alias aira-login="iam-cloud-admin-tools ; aws sso login"
 
 # Envs.
-alias a-mgmt-admin="export AWS_PROFILE=aira.MGMT.admin"
-alias a-systest-admin="export AWS_PROFILE=aira.TEST.admin ; kubectx arn:aws:eks:eu-north-1:361629632765:cluster/systest"
-alias a-uat-admin="export AWS_PROFILE=aira.TEST.admin ; kubectx arn:aws:eks:eu-north-1:361629632765:cluster/uat"
-alias a-prod-admin="export AWS_PROFILE=aira.PROD.admin ; kubectx arn:aws:eks:eu-north-1:528895488893:cluster/prod"
-alias a-tools-admin="export AWS_PROFILE=aira.TOOLS.admin ; kubectx arn:aws:eks:eu-north-1:660263384063:cluster/tools"
+alias iam-aira-admin-mgmt="export AWS_PROFILE=aira-admin-mgmt"
+alias iam-aira-admin-systest="export AWS_PROFILE=aira-admin-test ; kubectx arn:aws:eks:eu-north-1:361629632765:cluster/systest"
+alias iam-aira-admin-uat="export AWS_PROFILE=aira-admin-test ; kubectx arn:aws:eks:eu-north-1:361629632765:cluster/uat"
+alias iam-aira-admin-prod="export AWS_PROFILE=aira-admin-prod ; kubectx arn:aws:eks:eu-north-1:528895488893:cluster/prod"
+alias iam-aira-admin-tools="export AWS_PROFILE=aira-admin-tools ; kubectx arn:aws:eks:eu-north-1:660263384063:cluster/tools"
+
+# New profiles.
+alias iam-cloud-admin-systest="export AWS_PROFILE=cloud-admin-test ; kubectx arn:aws:eks:eu-north-1:361629632765:cluster/systest"
+alias iam-cloud-admin-uat="export AWS_PROFILE=cloud-admin-test ; kubectx arn:aws:eks:eu-north-1:361629632765:cluster/uat"
+alias iam-cloud-admin-prod="export AWS_PROFILE=cloud-admin-prod ; kubectx arn:aws:eks:eu-north-1:528895488893:cluster/prod"
+alias iam-cloud-admin-tools="export AWS_PROFILE=cloud-admin-tools ; kubectx arn:aws:eks:eu-north-1:660263384063:cluster/tools"
 
 alias atuin-admin="export AWS_PROFILE=atuin.ADMIN"
+
+alias khet="cd ~/Documents/code/personal/khet"
+alias khet-login="export AWS_PROFILE=khet.TEST.admin; aws sso login"
+alias khet-coord-admin="export AWS_PROFILE=khet.COORD.admin"
+alias khet-prod-admin="export AWS_PROFILE=khet.PROD.admin"
+alias khet-test-admin="export AWS_PROFILE=khet.TEST.admin"
 
 # ----------------------------------------------
 # Fish-like autosuggestions.
@@ -127,3 +135,9 @@ alias assume="source assume"
 
 #fpath=(/Users/khu/.granted/zsh_autocomplete/assume/ $fpath)
 #fpath=(/Users/khu/.granted/zsh_autocomplete/granted/ $fpath)
+
+#################
+
+function jwt() {
+  jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$1"
+}
