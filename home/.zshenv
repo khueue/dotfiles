@@ -88,7 +88,9 @@ alias vh="cd ~/Documents/code/work/vh"
 alias k="kubectl"
 
 # AWS SSO.
-alias aira-login="iam-cloud-admin-tools ; aws sso login"
+alias aira-login="iam-cloud-admin-tools ; aws sso login ; ecr-tools"
+
+alias ecr-tools="aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin 660263384063.dkr.ecr.eu-north-1.amazonaws.com"
 
 # Envs.
 alias iam-aira-admin-mgmt="export AWS_PROFILE=aira-admin-mgmt"
@@ -102,6 +104,12 @@ alias iam-cloud-admin-systest="export AWS_PROFILE=cloud-admin-test ; kubectx arn
 alias iam-cloud-admin-uat="export AWS_PROFILE=cloud-admin-test ; kubectx arn:aws:eks:eu-north-1:361629632765:cluster/uat"
 alias iam-cloud-admin-prod="export AWS_PROFILE=cloud-admin-prod ; kubectx arn:aws:eks:eu-north-1:528895488893:cluster/prod"
 alias iam-cloud-admin-tools="export AWS_PROFILE=cloud-admin-tools ; kubectx arn:aws:eks:eu-north-1:660263384063:cluster/tools"
+
+# IoT Mgmt.
+alias iot-systest="export AWS_PROFILE=iot-test ; kubectx arn:aws:eks:eu-north-1:361629632765:cluster/systest"
+alias iot-uat="export AWS_PROFILE=iot-test ; kubectx arn:aws:eks:eu-north-1:361629632765:cluster/uat"
+alias iot-prod="export AWS_PROFILE=iot-prod ; kubectx arn:aws:eks:eu-north-1:528895488893:cluster/prod"
+alias iot-tools="export AWS_PROFILE=iot-tools ; kubectx arn:aws:eks:eu-north-1:660263384063:cluster/tools"
 
 alias atuin-admin="export AWS_PROFILE=atuin.ADMIN"
 

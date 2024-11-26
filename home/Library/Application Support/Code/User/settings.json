@@ -20,8 +20,8 @@
 	"editor.cursorSurroundingLines": 2,
 	"editor.dragAndDrop": false,
 	"editor.find.addExtraSpaceOnTop": false,
-	"editor.fontFamily": "Menlo, JuliaMono,  'Code New Roman', 'Borg Sans Mono', Menlo, 'Courier New', monospace",
-	"editor.fontSize": 18,
+	"editor.fontFamily": "Menlo, 'Courier New', monospace",
+	"editor.fontSize": 16,
 	"editor.insertSpaces": false,
 	"editor.largeFileOptimizations": false,
 	"editor.minimap.enabled": false,
@@ -31,7 +31,7 @@
 	],
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
-	"explorer.openEditors.visible": 0,
+	"explorer.openEditors.visible": 1,
 	"explorer.sortOrder": "type",
 	"extensions.ignoreRecommendations": true,
 	"files.autoSave": "onFocusChange",
@@ -40,12 +40,7 @@
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"scm.diffDecorationsGutterWidth": 5,
 	"search.smartCase": false,
-	"telemetry.enableTelemetry": false,
 	"typescript.updateImportsOnFileMove.enabled": "never",
-	"vetur.format.enable": true,
-	"vetur.completion.autoImport": false,
-	"vetur.format.options.useTabs": true,
-	"vetur.useWorkspaceDependencies": true,
 	"vim.highlightedyank.duration": 30,
 	"vim.highlightedyank.enable": true,
 	"vim.hlsearch": true,
@@ -75,28 +70,21 @@
 	"workbench.colorCustomizations": {
 		"statusBar.background": "#222"
 	},
-	"workbench.colorTheme": "night nord theme",
+	"workbench.colorTheme": "Svelte Dark",
 	"workbench.editor.highlightModifiedTabs": true,
-	"workbench.editor.showTabs": true,
+	"workbench.editor.showTabs": "multiple",
 	"workbench.startupEditor": "newUntitledFile",
 	"workbench.tree.indent": 26,
-	"svelte.plugin.svelte.format.config.svelteStrictMode": true,
 	"[svelte]": {
 		"editor.defaultFormatter": "svelte.svelte-vscode"
 	},
 	"javascript.format.enable": false,
 	"html.format.enable": false,
 	"emmet.triggerExpansionOnTab": true,
-	"python.showStartPage": false,
-	"python.languageServer": "Pylance",
-	"workbench.editorAssociations": {
-		"*.ipynb": "jupyter-notebook"
-	},
 	"editor.cursorStyle": "line",
 	"editor.lineNumbers": "on",
 	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
 	"editor.wordWrap": "off",
-	"workbench.editor.untitled.hint": "hidden",
 	"editor.inlineSuggest.enabled": true,
 	"explorer.compactFolders": false,
 	"explorer.incrementalNaming": "smart",
@@ -104,17 +92,17 @@
 		"default": "right",
 		"jupyter-notebook": "left"
 	},
-	"python.analysis.typeCheckingMode": "basic",
-	"svelte.enable-ts-plugin": true,
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
 	"files.insertFinalNewline": true,
-	"workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
-	"workbench.activityBar.visible": false,
-	"terraform.experimentalFeatures.validateOnSave": true,
 	"redhat.telemetry.enabled": false,
-	"powershell.promptToUpdatePowerShell": false,
 	"git.openRepositoryInParentFolders": "always",
-	"window.zoomLevel": -1
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.activityBar.location": "hidden",
+	"window.zoomLevel": -1,
+	"remote.autoForwardPortsSource": "hybrid",
+	"java.configuration.detectJdksAtStart": false,
+	"editor.inlayHints.enabled": "offUnlessPressed",
+	"explorer.confirmPasteNative": false
 }

@@ -18,4 +18,3 @@ abbr vh 'cl ~/Documents/code/work/vh'
 
 abbr bs 'bin/synth'
 abbr bt 'bin/tf'
-

@@ -38,4 +38,4 @@ fi
 export TERM=xterm-256color
 
 # Continue with fish!
-fish
+#fish
