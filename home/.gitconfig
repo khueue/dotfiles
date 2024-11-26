@@ -1,15 +1,14 @@
 [includeIf "gitdir:~/Documents/code/personal/"]
-  path = ~/.gitconfig-personal
+	path = ~/.gitconfig-personal
 
 [includeIf "gitdir:~/Documents/code/work/vh/"]
-  path = ~/.gitconfig-vh
+	path = ~/.gitconfig-vh
+
 [init]
 	defaultBranch = main
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[user]
-	name = Sebastian Lundström
-	email = sebastian.lundstrom@airahome.com

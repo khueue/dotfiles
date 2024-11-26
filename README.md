@@ -8,11 +8,15 @@
 
 ## Add Something New
 
-To add the file `~/Library/Preferences/com.googlecode.iterm2.plist`, do this:
-
 ```
-mkdir -p ./home/Library/Preferences/
-ln -f ~/Library/Preferences/com.googlecode.iterm2.plist ./home/Library/Preferences/com.googlecode.iterm2.plist
+mkdir -p ./home/.config/zed
+ln -f ~/.config/zed/keymap.json ./home/.config/zed/keymap.json
+ln -f ~/.config/zed/settings.json ./home/.config/zed/settings.json
+
+mkdir -p ./home/.config/zed/themes
+ln -f ~/.config/zed/themes/"Gruvbox Material Dark Colorscheme.json" ./home/.config/zed/themes/"Gruvbox Material Dark Colorscheme.json"
+ln -f ~/.config/zed/themes/Radiant.json ./home/.config/zed/themes/Radiant.json
+ln -f ~/.config/zed/themes/SunsetForest.json ./home/.config/zed/themes/SunsetForest.json
 ```
 
 ## Useful Installs
